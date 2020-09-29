@@ -1,21 +1,19 @@
 package main;
 
-public abstract class Items {
+public class Books extends Items {
+	
 	
 	private int size;
 	private int ageOfItem;
 	private String title;
+	private int nOfPages;
 	
-	
-	public Items(int size, int ageOfItem, String title) {
-		this.size = size;
-		this.ageOfItem = ageOfItem;
-		this.title = title;
-		
+	public Books(int size, int ageOfItem, String title, int nOfPages) {
+		super(size, ageOfItem, title);
+		this.nOfPages = nOfPages;
 	}
 	
-	//Getters and Setters
-	
+	// Getters and Setters
 	
 	public int getSize() {
 		return size;
@@ -40,6 +38,9 @@ public abstract class Items {
 	public void setTitle(String title) {
 		this.title = title;
 	}
+	
 
+	
+	 
 
 }
