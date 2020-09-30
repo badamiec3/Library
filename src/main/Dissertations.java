@@ -1,22 +1,17 @@
 package main;
 
-import java.util.HashMap;
+public class Dissertations extends Items {
 
-public abstract class Items {
+	private int size;
+	private int ageOfItem;
+	private String title;
+	private String subject;
 
-	protected int size;
-	protected int ageOfItem;
-	protected String title;
-
-	public Items(int size, int ageOfItem, String title) {
-		this.size = size;
-		this.ageOfItem = ageOfItem;
-		this.title = title;
+	public Dissertations(int size, int ageOfItem, String title, String subject) {
+		super(size, ageOfItem, title);
+		this.subject = subject;
 
 	}
-	
-
-	// Getters and Setters
 
 	public int getSize() {
 		return size;
