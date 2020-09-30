@@ -11,22 +11,16 @@ public class Runner {
 		Librarians librarianJohn = new Librarians("John", 37, 234, false);
 		Users userSally = new Users("Sally", 53, 1654, true, new ArrayList<>());
 
-		System.out.println(userSally.getName());
-		System.out.println(librarianJohn.getName());
-
 		Items map = new Maps(40, 300, "1700's Map of Patagonia", 1754, "Patagonia");
 		Items book = new Books(30, 20, "War and Peace", "Leo Tolstoy", 1225);
 		Items cookbook = new Books(25, 5, "Cooking Basics for Dummies", " Bryan Miller", 464);
 		Items sallyDiss = new Dissertations(20, 1, "Dissertation", "Chemistry");
 
-		System.out.println(cookbook.getTitle());
-
 		Library library = new Library();
 
 		userSally.getItemsInPossession().add(sallyDiss);
 
-		System.out.println(
-				"The items in the possession of " + userSally.getName() + " are: " + userSally.getItemsInPossession());
+		System.out.println("The items in the possession of Sally are: " + userSally.getItemsInPossession());
 
 		library.addItem(map);
 		library.addItem(book);
@@ -46,14 +40,12 @@ public class Runner {
 
 		library.checkOutItem(cookbook, studentAlice);
 
-		System.out.println("The items in the possession of " + studentAlice.getName() + " are: "
-				+ studentAlice.getItemsInPossession());
+		System.out.println("The items in the possession of Alice are: " + studentAlice.getItemsInPossession());
 		System.out.println("The item(s) stored at the library is/are " + library.getItemsStored());
 
 		System.out.println("Sally is submitting a dissertation.");
 		userSally.getItemsInPossession().remove(sallyDiss);
-		System.out.println(
-				"The items in the possession of " + userSally.getName() + " are: " + userSally.getItemsInPossession());
+		System.out.println("The items in the possession of Sally are: " + userSally.getItemsInPossession());
 		library.addItem(sallyDiss);
 		System.out.println("The item(s) stored at the library is/are " + library.getItemsStored());
 

@@ -1,5 +1,7 @@
 package main;
 
+import java.util.HashMap;
+
 public class Books extends Items {
 
 	private int size;

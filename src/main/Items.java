@@ -1,5 +1,7 @@
 package main;
 
+import java.util.HashMap;
+
 public abstract class Items {
 
 	protected int size;
@@ -12,6 +14,7 @@ public abstract class Items {
 		this.title = title;
 
 	}
+	
 
 	// Getters and Setters
 
