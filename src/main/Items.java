@@ -1,22 +1,20 @@
 package main;
 
 public abstract class Items {
-	
-	private int size;
-	private int ageOfItem;
-	private String title;
-	
-	
+
+	protected int size;
+	protected int ageOfItem;
+	protected String title;
+
 	public Items(int size, int ageOfItem, String title) {
 		this.size = size;
 		this.ageOfItem = ageOfItem;
 		this.title = title;
-		
+
 	}
-	
-	//Getters and Setters
-	
-	
+
+	// Getters and Setters
+
 	public int getSize() {
 		return size;
 	}
@@ -40,6 +38,5 @@ public abstract class Items {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-
 
 }

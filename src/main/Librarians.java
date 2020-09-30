@@ -6,12 +6,9 @@ public class Librarians extends People {
 	private int age;
 	private int employeeForDays;
 	private boolean isManagement;
-	
-	
 
 	public Librarians(String name, int age, int employeeForDays, boolean isManagement) {
-		this.name = name;
-		this.age = age;
+		super(name, age);
 		this.employeeForDays = employeeForDays;
 		this.isManagement = isManagement;
 
